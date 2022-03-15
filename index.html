@@ -30,14 +30,10 @@
                                         strHTML = "";
                                         var e = document.getElementById("genres");
                                         var filterBy = e.options[e.selectedIndex].text;
-                                        if (filterBy != "") {
-                                                songs.filter(function (entry) {
-                                                        return entry.Genres.includes(filterBy);
-                                                })
-                                        }
-                                        alert(songs);
                                         songs.forEach(function (song) {
-                                                strHTML += "Artist" + ": " + song.Artist + "<br>" + song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>";
+                                                if (song.Genre.includes(filterBy) && filterBy != "") {
+                                                        strHTML += "Artist" + ": " + song.Artist + "<br>" + song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>";
+                                                }
                                         })
                                         strHTML += "</ul>";
                                         document.getElementById("write").innerHTML = returnHTML;
@@ -63,7 +59,7 @@
         </script>
 </head>
 
-<body>
+<body onload="loadFile()">
         <h1> JSON Set List </h1>
         <div id="write">
                 Loading...
