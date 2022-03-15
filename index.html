@@ -30,12 +30,19 @@
                                         strHTML = "";
                                         var e = document.getElementById("genres");
                                         var filterBy = e.options[e.selectedIndex].text;
-                                        alert(filterBy);
-                                        songs.forEach(function (song) {
-                                                if (song.Genres.includes(filterBy) && filterBy != "") {
-                                                        strHTML += "Artist" + ": " + song.Artist + "<br>" + song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>";
-                                                }
-                                        })
+                                        if (filterBy != "") {
+                                                songs.forEach(function (song) {
+                                                        if (song.Genre.includes(filterBy)) {
+                                                                strHTML += "Artist" + ": " + song.Artist + "<br>" + song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>";
+                                                        }
+                                                })
+                                        }
+                                        else {
+                                                songs.forEach(function (song) {
+                                                        strHTML += "Artist" + ": " + song.Artist + "<br>" + song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>"; 
+                                                })
+                                        }
+                                        
                                         strHTML += "</ul>";
                                         document.getElementById("write").innerHTML = returnHTML;
                                         document.getElementById("write2").innerHTML = strHTML;
