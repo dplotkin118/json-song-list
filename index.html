@@ -30,6 +30,7 @@
                                         strHTML = "";
                                         var e = document.getElementById("genres");
                                         var filterBy = e.options[e.selectedIndex].text;
+                                        alert(filterBy);
                                         songs.forEach(function (song) {
                                                 if (song.Genre.includes(filterBy) && filterBy != "") {
                                                         strHTML += "Artist" + ": " + song.Artist + "<br>" + song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>";
