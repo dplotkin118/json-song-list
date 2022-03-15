@@ -1,0 +1,62 @@
+[
+    {
+        "Artist": "Bon Jovi",
+        "Song": "Living on a Prayer",
+        "Genres": ["Rock"],
+        "Year": 1986 
+    },
+    {
+        "Artist": "Fleetwood Mac",
+        "Song": "Go Your Own Way",
+        "Genres": ["Rock", "Folk"],
+        "Year": 1977
+    },
+    {
+        "Artist": "Mumford and Sons",
+        "Song": "I Will Wait",
+        "Genres": ["Folk Rock"],
+        "Year": 2012
+    },
+    {
+        "Artist": "The Strokes",
+        "Song": "Last Nite",
+        "Genres": ["Alternative"],
+        "Year": 2001
+    },
+    {
+        "Artist": "Snow Patrol",
+        "Song": "Chasing Cars",
+        "Genres": ["Alternative", "Alt Rock"],
+        "Year": 2006
+    },
+    {
+        "Artist": "Oasis",
+        "Song": "Champagne Supernova",
+        "Genres": ["Rock"],
+        "Year": 1996
+    },
+    {
+        "Artist": "The Killers",
+        "Song": "Mr. Brightside",
+        "Genres": ["Alt Rock", "Pop"],
+        "Year": 2003
+    },
+    {
+        "Artist": "Bruno Mars",
+        "Song": "Finesse",
+        "Genres": ["Pop", "Funk"],
+        "Year": 2016
+    },
+    {
+        "Artist": "Ed Sheeran",
+        "Song": "Thinking Out Loud",
+        "Genres": ["Pop", "Blue Eyed Soul"],
+        "Year": 2014
+    },
+    {
+        "Artist": "WALK THE MOON",
+        "Song": "Shut Up and Dance",
+        "Genres": ["Pop"],
+        "Year": 2014
+    }
+]
