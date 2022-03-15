@@ -35,6 +35,7 @@
                                                         return entry.Genres.includes(filterBy);
                                                 })
                                         }
+                                        alert(songs);
                                         songs.forEach(function (song) {
                                                 strHTML += "Artist" + ": " + song.Artist + "<br>" + song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>";
                                         })
