@@ -32,7 +32,6 @@
                                         var filterBy = e.options[e.selectedIndex].text;
                                         if (filterBy != "") {
                                                 songs.filter(function (entry) {
-                                                        alert(entry.Genres.includes(filterBy))
                                                         return entry.Genres.includes(filterBy);
                                                 })
                                         }
@@ -63,7 +62,7 @@
         </script>
 </head>
 
-<body onload="loadFile()">
+<body>
         <h1> JSON Set List </h1>
         <div id="write">
                 Loading...
