@@ -29,7 +29,7 @@
 
                                         strHTML = "";
                                         songs.forEach(function (song) {
-                                                strHTML += "Artist" + ": " + song.artist + "<br>" +  song.name + "<br>";
+                                                strHTML += "Artist" + ": " + song.Artist + "<br>" +  song.Song + "<br>" + "Genre: " + song.Genres + "<br>" + "Year:" + song.Year;
                                         })
                                         strHTML += "</ul>";
                                         document.getElementById("write").innerHTML = returnHTML;
