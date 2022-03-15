@@ -30,6 +30,7 @@
                                         strHTML = "";
                                         var e = document.getElementById("genres");
                                         var filterBy = e.options[e.selectedIndex].text;
+                                        alert(filterBy);
                                         if (filterBy != "") {
                                                 songs.filter(function (entry) {
                                                         return entry.Genre.includes(filterBy);
