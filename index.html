@@ -29,10 +29,10 @@
 
                                         strHTML = "";
                                         songs.forEach(function (song) {
-                                                strHTML += "Artist" + ": " + song.Artist + "<br>" +  song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year:" + song.Year + "<br>" + "<br>";
+                                                strHTML += "Artist" + ": " + song.Artist + "<br>" +  song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>";
                                         })
                                         strHTML += "</ul>";
-                                        document.getElementById("write").innerHTML = returnHTML;
+                                        document.getElementById("write").innerHTML = returnHTML + "<br>";
                                         document.getElementById("write2").innerHTML = strHTML;
                                 }
                                 else if (request.readyState == 4 && request.status != 200) {
