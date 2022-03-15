@@ -33,7 +33,7 @@
                                         alert(filterBy);
                                         if (filterBy != "") {
                                                 songs.filter(function (entry) {
-                                                        return entry.Genre.includes(filterBy);
+                                                        return entry.Genres.includes(filterBy);
                                                 })
                                         }
                                         songs.forEach(function (song) {
