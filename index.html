@@ -27,11 +27,11 @@
                                         returnHTML = result;
                                         songs = JSON.parse(result);
 
-                                        // strHTML = "<ul>";
-                                        // songs.forEach(function (animal) {
-                                        //         strHTML += "<li>" + songs.name + " : " + animal.type + "</li>";
-                                        // })
-                                        // strHTML += "</ul>";
+                                        strHTML = "";
+                                        songs.forEach(function (song) {
+                                                strHTML += "Artist" + " : " song.artist + "<br>" +  song.name + "<br>";
+                                        })
+                                        strHTML += "</ul>";
                                         document.getElementById("write").innerHTML = returnHTML;
                                         // document.getElementById("write").innerHTML = strHTML;
                                 }
@@ -56,7 +56,11 @@
 </head>
 
 <body onload="loadFile()">
+        <h1> JSON Set List </h1>
         <div id="write">
                 Loading...
+        </div>
+        <div id="write2">
+                
         </div>
 </body>
