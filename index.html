@@ -32,7 +32,7 @@
                                         var filterBy = e.options[e.selectedIndex].text;
                                         if (filterBy != "") {
                                                 songs.forEach(function (song) {
-                                                        if (song.Genre.includes(filterBy)) {
+                                                        if (song.Genres.includes(filterBy)) {
                                                                 strHTML += "Artist" + ": " + song.Artist + "<br>" + song.Song + "<br>" + "Genre: " + song.Genres.join(", ") + "<br>" + "Year: " + song.Year + "<br>" + "<br>";
                                                         }
                                                 })
